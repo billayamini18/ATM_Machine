@@ -1,0 +1,1 @@
+A simple ATM simulator built with Python using functions, lists, and dictionaries. Users can check balances, deposit funds, withdraw money, and view transaction histories, with all actions authenticated by a name and PIN.
