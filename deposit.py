@@ -1,12 +1,8 @@
-# Contains the function to add money to an account.
 from auth import authenticate_user
-
 def deposit(name, pin, amount):
-    # Adds money to an account and records the transaction.
     if amount <= 0:
         print("\nDeposit amount must be positive.")
         return
-    # Checks user entered correct name and pin.
     account = authenticate_user(name, pin)
     if account:
         account["balance"] += amount
