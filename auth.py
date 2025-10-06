@@ -1,4 +1,3 @@
-# Shared utility for user authentication.
 from data import accounts
 def authenticate_user(name, pin):
     """
@@ -9,4 +8,5 @@ def authenticate_user(name, pin):
         # if both and pin is correct 
         if account["name"].lower() == name.lower() and account["pin"] == pin:
             return account
+
     return None
